@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ITMaster</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>ITMaster</span>
+		</div>
+		<div class="menu">
+		<div class="menu__icon">
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      		<span></span>
+		</div>
+		<div id="about">
+			<a href="#" title="Первый" onclick="slowScroll('#main')">Услуги</a>
+			<a href="#" title="Второй" onclick="slowScroll('#overview')">Преимущества</a>
+			<a href="#" title="Третий" onclick="slowScroll('#contacts')">Контакты</a>
+			<a href="#" title="Четвертый" onclick="slowScroll('#faq')">FAQ</a>
+		</div>
+		</div>
+	</header>
+
+	<div id="top">
+		<h1>Программирование</h1>
+		<h3>как способ жизни!</h3>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>Наши услуги помогут вам!</h2>
+			<span>Большой выбор всего, что может вам пригодиться</span>
+		</div>
+		<div class="text">
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas ad aut ex aspernatur optio, tempore sunt laudantium eos id voluptatum! Veniam magni sed ut molestias eveniet ullam deserunt excepturi dolorem, eligendi distinctio vitae nemo porro delectus quibusdam inventore similique voluptas, tempora mollitia culpa maxime beatae omnis vel quod nulla.</span>
+		</div>
+	</div>
+
+	<div id="overview">
+		<h2>Преимущества</h2>
+		<h4>С нами все проще</h4>
+		<div class="img">
+			<img src="https://www.viktoria-group.com.ua/wp-content/uploads/2017/07/ФОТО-ОФИСА-КРАСИВОЕ.jpg" alt="">
+			<span>Красивая фотография офиса 1</span>
+		</div>
+		<div class="img">
+			<img src="http://sun-diz.com.ua/images/beautiful-office.jpg" alt="">
+			<span>Красивая фотография офиса 2</span>
+		</div>
+	</div>
+
+	<div id="contacts">
+		<center><h5>Обратная связь</h5></center>
+		<form id="form_input">
+			<label for="name">Имя <span>*</span></label><br>
+			<input type="text" placeholder="Введите имя" name="name" id="name"><br>
+			<label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea name="message" id="message" placeholder="Введите ваше сообщение"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+		</form>
+	</div>
+	
+	<div id="faq">
+		<div>
+			<span class="title">Оплата</span><br>
+			<span class="heading">Как будет проходить оплата</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+			<span class="heading">Как будет проходить оплата</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+			<span class="heading">Как будет проходить оплата</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+		</div>
+		<div>
+			<span class="title">Информация</span><br>
+			<span class="heading">Что входит в услуги сервиса</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+			<span class="heading">Что входит в услуги сервиса</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+			<span class="heading">Что входит в услуги сервиса</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+		</div>
+		<div>
+			<span class="title">Гарантия</span><br>
+			<span class="heading">Какие гарантии есть</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+			<span class="heading">Какие гарантии есть</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+			<span class="heading">Какие гарантии есть</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laboriosam totam vel ipsum minus, exercitationem veritatis, explicabo, iste animi perspiciatis quidem ad reiciendis non nam saepe optio quis sit provident!</p>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+	function slowScroll(id) {
+		$('html, body').animate({
+			scrollTop: $(id).offset().top
+		}, 500);
+	};
+
+	$(document).on("scroll", function() {
+		if ($(window).scrollTop() === 0)
+			$("header").removeClass("fixed");
+		else
+			$("header").attr("class", "fixed");
+	});
+
+	(function($){
+  	$(function() {
+    $('.menu__icon').on('click', function() {
+      $(this).closest('.menu').toggleClass('menu_state_open');
+   	 });
+  	});
+	})(jQuery);
+	</script>
+</body>
+
+</html>
